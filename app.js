@@ -44,7 +44,7 @@
     school: '<path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 3.45 1.97A1 1 0 0 1 22 12.84V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.16a1 1 0 0 1 .55-.87L6 10"/><path d="M18 5v17M4 6l7.11-3.56a2 2 0 0 1 1.78 0L20 6M6 5v17"/><circle cx="12" cy="9" r="2"/>',
   };
   const icon = (n, cls = "") => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n] || ""}</svg>`;
-  const projectIcon = { "rareos-woocentral": "server", wheelmela: "car", wisewheels: "car", wisemarket: "cart", ims: "box", "uv-schools": "school", "ai-image-analysis": "eye", oelogger: "terminal", buynoh: "cart" };
+  const projectIcon = { "rareos-woocentral": "server", wheelmela: "car", wisewheels: "car", wisemarket: "cart", "uv-schools": "school", "ai-image-analysis": "eye", oelogger: "terminal", buynoh: "cart" };
 
   /* ---------------- Theme ---------------- */
   const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };

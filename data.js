@@ -108,7 +108,7 @@ window.PORTFOLIO = {
   /*
    * PROJECTS
    * priority: lower number = shown first. featured: shown on the home page.
-   * status: "Live" | "In development" | "Concept" | "Case study pending"
+   * status: "Live" | "Private" | "Offline" | "In development" | "Concept" | "Case study pending"
    * Any field set to null / [] is hidden on the site.
    */
   projects: [
@@ -293,41 +293,6 @@ window.PORTFOLIO = {
       screenshots: ["assets/projects/wisemarket.webp"],
     },
     {
-      id: "ims",
-      name: "IMS",
-      tagline: "Inventory management and accounting reports for businesses",
-      category: "Business Systems",
-      filters: ["Backend", "Business systems"],
-      status: "Live",
-      featured: false,
-      priority: 6,
-      url: null, // add the IMS Skyphones link once confirmed
-      repo: null,
-      image: null,
-      summary:
-        "An inventory management system for day-to-day business operations, with accounting reports such as the ledger trial report.",
-      problem: null,
-      purpose: null,
-      solution: null,
-      features: [
-        "Inventory management",
-        "Business and transaction workflows",
-        "Ledger trial report",
-        "Operational, database-driven reporting",
-        "Deployed for several businesses, including Skyphones and ZMobile",
-      ],
-      planned: [],
-      architecture: [],
-      contribution: null,
-      challenges: [],
-      stack: [],
-      screenshots: [],
-      deployments: [
-        { name: "Skyphones", url: null },
-        { name: "ZMobile", url: null },
-      ],
-    },
-    {
       id: "uv-schools",
       name: "UV Schools",
       tagline: "School management system with a companion mobile app",
@@ -362,13 +327,13 @@ window.PORTFOLIO = {
       tagline: "Logging and developer tooling",
       category: "Developer Tools",
       filters: ["Developer tools"],
-      status: "Case study pending",
+      status: "Offline",
       featured: false,
       priority: 8,
       url: null,
       repo: null,
       image: null,
-      summary: "A logging tool for software teams. A full case study is being prepared.",
+      summary: "A logging tool for software teams. The project is currently offline.",
       problem: null,
       purpose: null,
       solution: null,

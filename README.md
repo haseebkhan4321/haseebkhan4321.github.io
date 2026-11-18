@@ -20,7 +20,7 @@ All content lives in [`data.js`](data.js):
 Project fields set to `null` or `[]` are hidden on the site, so leave unverified details empty instead of guessing.
 
 - **Order:** `priority` (lower first). `featured: true` puts a project on the home page; `flagship: true` gives it the large architecture card.
-- **Status:** `"Live"`, `"Private"`, `"In development"`, `"Concept"` or `"Case study pending"`.
+- **Status:** `"Live"`, `"Private"`, `"Offline"`, `"In development"`, `"Concept"` or `"Case study pending"`.
 - **Screenshots:** put images in `assets/projects/` (WebP, about 1200px wide) and reference them in `image` and `screenshots`.
 - **Résumé:** add the PDF to `assets/` and set `profile.resume`.
 
