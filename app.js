@@ -224,6 +224,20 @@
           <div class="work-grid">
             ${featured.map((p, i) => card(p, { wide: i === 0 })).join("")}
           </div>
+          ${projects.some((p) => !p.featured) ? `
+          <div class="more-list glass reveal">
+            <div class="more-head"><h3>More projects</h3><a class="link-arrow" href="projects.html">Browse with filters ${icon("arrow")}</a></div>
+            <ul>
+              ${projects.filter((p) => !p.featured).map((p) => `
+                <li><a class="more-row" href="project.html?id=${p.id}">
+                  <span class="thumb">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : icon(projectIcon[p.id] || "layers")}</span>
+                  <span class="txt"><strong>${esc(p.name)}</strong><span>${esc(p.tagline)}</span></span>
+                  <span class="cat">${esc(p.category)}</span>
+                  <span class="status ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span>
+                  <span class="go">${icon("arrow")}</span>
+                </a></li>`).join("")}
+            </ul>
+          </div>` : ""}
         </div>
       </section>
 
