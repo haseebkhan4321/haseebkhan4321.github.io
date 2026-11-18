@@ -1,220 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Haseeb Khan | Full-Stack Developer</title>
-  <meta name="description" content="Haseeb Khan, full-stack developer building production web platforms with Python, Django, FastAPI, Next.js and Docker." />
-  <meta name="theme-color" content="#0b0b1a" />
-  <meta property="og:title" content="Haseeb Khan | Full-Stack Developer" />
-  <meta property="og:description" content="Marketplaces, LMS platforms, AI content pipelines and fintech tools, built end to end." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c5cff'/><stop offset='1' stop-color='%2300d4ff'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='66' font-family='Arial' font-weight='700' font-size='46' text-anchor='middle' fill='white'>HK</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haseeb Khan | Senior Full-Stack & Backend Engineer</title>
+  <meta name="description" content="Haseeb Khan is a senior full-stack and backend engineer in Lahore, Pakistan, building production APIs, marketplaces, inventory systems and AI integrations with Python, FastAPI and Laravel.">
+  <meta name="author" content="Haseeb Khan">
+  <meta name="theme-color" content="#07080b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Haseeb Khan | Senior Full-Stack & Backend Engineer">
+  <meta property="og:description" content="Haseeb Khan is a senior full-stack and backend engineer in Lahore, Pakistan, building production APIs, marketplaces, inventory systems and AI integrations with Python, FastAPI and Laravel.">
+  <meta property="og:image" content="https://haseebkhan4321.github.io/assets/projects/wheelmela.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://haseebkhan4321.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b93ff'/%3E%3Cstop offset='1' stop-color='%235ee6c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='700' font-size='24' text-anchor='middle' fill='%230b0d1a'%3EHK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;else if(matchMedia("(prefers-color-scheme: light)").matches)document.documentElement.dataset.theme="light"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Haseeb Khan","jobTitle":"Senior Full-Stack & Backend Engineer","address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"alumniOf":"University of Management and Technology","url":"https://haseebkhan4321.github.io/","sameAs":["https://www.linkedin.com/in/haseeb-khan-75891713a/","https://github.com/haseebkhan4321"]}</script>
 </head>
-<body>
-  <!-- Animated background -->
-  <div class="bg" aria-hidden="true">
-    <span class="blob b1"></span>
-    <span class="blob b2"></span>
-    <span class="blob b3"></span>
-    <span class="blob b4"></span>
-    <div class="grid-overlay"></div>
-  </div>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="progress" aria-hidden="true"></div>
-
-  <header class="nav glass">
-    <a href="#home" class="logo">HK<span>.</span></a>
-    <nav>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-card glass tilt" data-tilt>
-        <p class="eyebrow reveal"><span class="dot"></span> Available for new projects</p>
-        <h1 class="reveal">
-          Hi, I'm <span class="grad">Haseeb Khan</span>
-        </h1>
-        <p class="role reveal">I build <span class="typed" id="typed">scalable web platforms</span><span class="caret">|</span></p>
-        <p class="lead reveal">
-          Full-stack developer shipping production systems end to end: from database design and APIs
-          to polished interfaces, Docker deployments and CI/CD.
-        </p>
-        <div class="cta reveal">
-          <a href="#projects" class="btn primary magnetic">View my work</a>
-          <a href="#contact" class="btn ghost magnetic">Get in touch</a>
-        </div>
-      </div>
-
-      <div class="floating-chips" aria-hidden="true">
-        <span class="chip glass f1">Django</span>
-        <span class="chip glass f2">FastAPI</span>
-        <span class="chip glass f3">Next.js</span>
-        <span class="chip glass f4">Docker</span>
-        <span class="chip glass f5">PostgreSQL</span>
-      </div>
-
-      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2 class="section-title reveal"><span class="num">01</span> About me</h2>
-      <div class="about-grid">
-        <div class="glass card about-text reveal">
-          <p>
-            I'm a developer who enjoys owning a product from the first schema to the last deploy.
-            My recent work spans multi-vendor marketplaces, a multi-tenant school management system,
-            an AI-driven publishing pipeline and a private bank statement analyser.
-          </p>
-          <p>
-            I care about clean architecture, honest documentation and software that keeps running
-            after launch. Most of what I build is containerised with Docker and shipped through
-            GitHub Actions to Linux servers.
-          </p>
-        </div>
-        <div class="stats">
-          <div class="glass card stat reveal"><strong data-count="5">0</strong><span>Production-grade projects</span></div>
-          <div class="glass card stat reveal"><strong data-count="15" data-suffix="+">0</strong><span>Technologies in daily use</span></div>
-          <div class="glass card stat reveal"><strong data-count="3">0</strong><span>Languages supported in UI (en, ur, ar)</span></div>
-          <div class="glass card stat reveal"><strong data-count="100" data-suffix="%">0</strong><span>Dockerised deployments</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2 class="section-title reveal"><span class="num">02</span> Skills &amp; tools</h2>
-      <div class="skills-grid">
-        <div class="glass card skill-group reveal tilt" data-tilt>
-          <div class="icon">⚙️</div>
-          <h3>Backend</h3>
-          <ul class="tags">
-            <li>Python</li><li>Django</li><li>FastAPI</li><li>SQLAlchemy</li><li>Celery</li><li>REST APIs</li><li>WebSockets</li>
-          </ul>
-        </div>
-        <div class="glass card skill-group reveal tilt" data-tilt>
-          <div class="icon">🎨</div>
-          <h3>Frontend</h3>
-          <ul class="tags">
-            <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>HTML &amp; CSS</li><li>i18n / RTL</li>
-          </ul>
-        </div>
-        <div class="glass card skill-group reveal tilt" data-tilt>
-          <div class="icon">🗄️</div>
-          <h3>Data</h3>
-          <ul class="tags">
-            <li>PostgreSQL</li><li>Redis</li><li>MinIO / S3</li><li>Alembic</li><li>SQLite</li>
-          </ul>
-        </div>
-        <div class="glass card skill-group reveal tilt" data-tilt>
-          <div class="icon">🚀</div>
-          <h3>DevOps &amp; AI</h3>
-          <ul class="tags">
-            <li>Docker</li><li>Docker Compose</li><li>GitHub Actions</li><li>Nginx</li><li>Linux VPS</li><li>OpenAI API</li><li>OCR</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2 class="section-title reveal"><span class="num">03</span> Featured projects</h2>
-      <div class="filters reveal" role="tablist">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="django">Django</button>
-        <button class="filter" data-filter="fastapi">FastAPI</button>
-        <button class="filter" data-filter="ai">AI</button>
-      </div>
-
-      <div class="projects-grid">
-        <article class="glass card project reveal tilt" data-tilt data-cat="fastapi">
-          <div class="project-top"><span class="badge">Marketplace</span><span class="emoji">🚗</span></div>
-          <h3>WheelMela</h3>
-          <p>
-            A vehicle marketplace for Pakistan: used cars, bikes, rickshaws and trucks, a Demand Board
-            for buyers, dealer storefronts, a parts store, forums and realtime chat over WebSockets.
-          </p>
-          <ul class="tags small"><li>FastAPI</li><li>Next.js 16</li><li>PostgreSQL</li><li>WebSockets</li><li>Tailwind v4</li></ul>
-        </article>
-
-        <article class="glass card project reveal tilt" data-tilt data-cat="fastapi">
-          <div class="project-top"><span class="badge">EdTech / SaaS</span><span class="emoji">🎓</span></div>
-          <h3>Campus LMS</h3>
-          <p>
-            A multi-tenant school, college and university management system with role-based dashboards,
-            background jobs, live updates and a glass UI in English, Urdu and Arabic.
-          </p>
-          <ul class="tags small"><li>FastAPI</li><li>Next.js</li><li>Celery</li><li>Redis</li><li>MinIO</li><li>Turborepo</li></ul>
-        </article>
-
-        <article class="glass card project reveal tilt" data-tilt data-cat="django ai">
-          <div class="project-top"><span class="badge">AI Publishing</span><span class="emoji">✍️</span></div>
-          <h3>DescriptorHub</h3>
-          <p>
-            A blog that writes itself: it discovers trends, picks angles worth writing, researches live
-            sources, then drafts cited, SEO-ready articles. Deployed to a VPS via GitHub Actions.
-          </p>
-          <ul class="tags small"><li>Django</li><li>OpenAI</li><li>PostgreSQL</li><li>Docker</li><li>Nginx</li></ul>
-        </article>
-
-        <article class="glass card project reveal tilt" data-tilt data-cat="django">
-          <div class="project-top"><span class="badge">E-commerce</span><span class="emoji">🛍️</span></div>
-          <h3>Marketplace</h3>
-          <p>
-            A multi-vendor marketplace for physical goods with a storefront, vendor dashboard, staff console
-            and versioned API, built on a strict layered repository pattern with docs checked in CI.
-          </p>
-          <ul class="tags small"><li>Django</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>mypy</li></ul>
-        </article>
-
-        <article class="glass card project reveal tilt" data-tilt data-cat="django ai">
-          <div class="project-top"><span class="badge">Fintech</span><span class="emoji">💳</span></div>
-          <h3>Ledger</h3>
-          <p>
-            Upload bank statements as CSV, Excel, PDF or photos. It detects layouts, removes duplicates,
-            runs OCR on scans and shows insights on taxes, bills and transfers, all running locally.
-          </p>
-          <ul class="tags small"><li>Django</li><li>Tesseract OCR</li><li>PDF parsing</li><li>Docker</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2 class="section-title reveal"><span class="num">04</span> Let's work together</h2>
-      <div class="glass card contact reveal">
-        <p class="lead">
-          Have a product idea, a platform that needs scaling, or a role you think I'd fit?
-          I'd love to hear about it.
-        </p>
-        <div class="cta">
-          <a href="https://github.com/haseebkhan4321" target="_blank" rel="noopener" class="btn primary magnetic">GitHub</a>
-          <a href="mailto:haseebkhan4321@gmail.com" class="btn ghost magnetic">Email me</a>
-          <a href="https://www.linkedin.com/in/haseeb-khan-75891713a/" target="_blank" rel="noopener" class="btn ghost magnetic">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Haseeb Khan. Built with HTML, CSS and a little JavaScript.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<body data-page="home">
+  <main id="app"></main>
+  <noscript><p style="padding:120px 24px;text-align:center">This portfolio needs JavaScript. Email haseebkhan4321@gmail.com or visit linkedin.com/in/haseeb-khan-75891713a.</p></noscript>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
