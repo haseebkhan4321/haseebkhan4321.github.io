@@ -35,6 +35,7 @@
     circleCheck: '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>',
     hourglass: '<path d="M5 22h14M5 2h14M17 22v-4.17a2 2 0 0 0-.59-1.42L12 12l-4.41 4.41A2 2 0 0 0 7 17.83V22M7 2v4.17a2 2 0 0 0 .59 1.42L12 12l4.41-4.41A2 2 0 0 0 17 6.17V2"/>',
     info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
+    message: '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
     copy: '<rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>',
     cart: '<circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>',
     car: '<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/>',
@@ -44,7 +45,7 @@
     school: '<path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 3.45 1.97A1 1 0 0 1 22 12.84V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.16a1 1 0 0 1 .55-.87L6 10"/><path d="M18 5v17M4 6l7.11-3.56a2 2 0 0 1 1.78 0L20 6M6 5v17"/><circle cx="12" cy="9" r="2"/>',
   };
   const icon = (n, cls = "") => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n] || ""}</svg>`;
-  const projectIcon = { "rareos-woocentral": "server", wheelmela: "car", wisewheels: "car", wisemarket: "cart", "uv-schools": "school", "ai-image-analysis": "eye", oelogger: "terminal", buynoh: "cart" };
+  const projectIcon = { "rareos-woocentral": "server", wheelmela: "car", wisewheels: "car", wisemarket: "cart", "uv-schools": "school", "ai-image-analysis": "eye", oelogger: "terminal", buynoh: "cart", "whatsapp-service": "message", "car-simulator": "car", markit: "briefcase" };
 
   /* ---------------- Theme ---------------- */
   const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
