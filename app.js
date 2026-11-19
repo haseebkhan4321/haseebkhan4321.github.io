@@ -327,7 +327,7 @@
       <section class="page-head container">
         <span class="eyebrow reveal"><span class="idx">Work</span> ${projects.length} projects</span>
         <h1 class="reveal">Projects</h1>
-        <p class="reveal">Backend platforms, marketplaces, business systems and AI integrations. Projects with the deepest engineering come first.</p>
+        <p class="reveal">Backend platforms, marketplaces, SaaS products and AI integrations. Projects with the deepest engineering come first.</p>
       </section>
       <section class="container">
         <div class="toolbar glass reveal">
@@ -352,7 +352,7 @@
       $$("#cats button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.cat === cat));
       const cards = $$("#grid .card");
       if (animate) cards.forEach((c, i) => { c.classList.add("in"); if (!reduce) c.animate([{ opacity: 0, transform: "translateY(12px)" }, { opacity: 1, transform: "none" }], { duration: 500, delay: i * 40, easing: "cubic-bezier(.16,1,.3,1)", fill: "backwards" }); });
-      else cards.forEach(observe);
+      // first render: cards are picked up by the global reveal observer set up below
       bindSpot();
       const u = new URL(location.href);
       cat === "All" ? u.searchParams.delete("cat") : u.searchParams.set("cat", cat);
