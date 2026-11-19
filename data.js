@@ -38,7 +38,7 @@ window.PORTFOLIO = {
   experience: [
     {
       company: "Oz Techwork",
-      title: "Senior Laravel Developer",
+      title: "Senior Full-Stack & Backend Engineer",
       start: "Jul 2022",
       end: "Present",
       url: null,
@@ -53,7 +53,7 @@ window.PORTFOLIO = {
     },
     {
       company: "Packages Limited",
-      title: "Software Developer",
+      title: "Application Developer",
       start: "Mar 2021",
       end: "Jul 2022",
       url: null,
@@ -66,7 +66,7 @@ window.PORTFOLIO = {
     },
     {
       company: "Programmers Force",
-      title: "Software Developer",
+      title: "Associate Software Engineer",
       start: "Mar 2020",
       end: "Mar 2021",
       url: null,
@@ -79,7 +79,7 @@ window.PORTFOLIO = {
     },
     {
       company: "Work Innovate",
-      title: "Software Developer",
+      title: "Associate Software Engineer",
       start: "Sep 2019",
       end: "Mar 2020",
       url: null,
